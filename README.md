@@ -12,8 +12,9 @@ It sends an image of a tumbleweed at random, to a defined channel that the user 
 - [Nextcord](https://github.com/nextcord/nextcord)
 
 Edit the bot to your heart's content. Important things to keep note are:
-- ``anchortime`` - the base time that will be used to wait for image sending
-- ``variance`` - a variance integer that is used along side anchortime to randomize the image sending interval
+- ``anchortime`` - The base time that will be used to wait for image sending.
+- ``variance`` - A variance integer that is used along side anchortime to randomize the image sending interval.
+- images/images - This is where images are kept at. I don't feel exactly comfortable making an entire repo licensed under GPL and include the images, so you'll need to find your own.
 
 **It is imporant to add a bot's token to the program, or it won't work. You can add it at the bottom of Tumbleweed.py.**
 
