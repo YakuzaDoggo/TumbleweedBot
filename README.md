@@ -1,2 +1,20 @@
 # TumbleweedBot
-Stupid little bot I made after an idea was sent in a server... 3 YEARS AGO
+Stupid little bot I made after an idea was sent in a server... **3 YEARS AGO**.
+
+# Ok, so what does it do?
+It sends an image of a tumbleweed at random, to a defined channel that the user sets. That's it.
+
+# Installation
+*Note that if you wish to use the bot, you can always invite it using [this link](https://discord.com/oauth2/authorize?client_id=1124911330328055828&scope=bot&permissions=100352).*
+
+**_Required_**
+- [At least Python 3.8](https://www.python.org/downloads/)
+- [Nextcord](https://github.com/nextcord/nextcord)
+
+Edit the bot to your heart's content. Important things to keep note are:
+- ``anchortime`` - the base time that will be used to wait for image sending
+- ``variance`` - a variance integer that is used along side anchortime to randomize the image sending interval
+
+**It is imporant to add a bot's token to the program, or it won't work. You can add it at the bottom of Tumbleweed.py.**
+
+Once done with that. Use your terminal, cd into the main folder, and run ``python3 Tumbleweed.py``.
