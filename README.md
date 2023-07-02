@@ -19,3 +19,7 @@ Edit the bot to your heart's content. Important things to keep note are:
 **It is imporant to add a bot's token to the program, or it won't work. You can add it at the bottom of Tumbleweed.py.**
 
 Once done with that. Use your terminal, cd into the main folder, and run ``python3 Tumbleweed.py``.
+
+# Limitations
+- Currently, you can *add* a channel, but you can not *remove* one. If you don't want the bot to send to a channel, just remove its perms to send messages there (or kick it).
+- The bot relies on an overall timer for sending images. Meaning all channels are given an image at the exact time (albeit random images). This may be an annoyance where you have it added to multiple channels at once.
