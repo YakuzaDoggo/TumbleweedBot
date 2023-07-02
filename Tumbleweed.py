@@ -12,7 +12,7 @@ import random
 import asyncio
 import atexit
 
-# used in SendTumbleweed() (original vars: 7200, 3600)
+# anchortime is is "base" time used. variance adds/subtracts to that to randomize the interval between images
 anchortime = 7200
 variance = 3600
 
@@ -73,7 +73,7 @@ for filename in os.listdir('./cogs'):
 
 async def SendTumbleweed(list):
     
-    # this is just checks 
+    # this is just checks if we add or subtract to the anchortime
     sign = random.randint(0, 1)
 
     if sign == 1:
