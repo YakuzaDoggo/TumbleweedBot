@@ -30,7 +30,7 @@ class user(commands.Cog):
     async def stop_sending(self, ctx):
         chID = ctx.channel.id
 
-        Tumbleweed.ChList.remove(chID)
+        Tumbleweed.ChList.remove(str(chID))
         await ctx.send("Remove this channel from the posting list!")
 
 
@@ -53,7 +53,7 @@ class user(commands.Cog):
     async def stop_sending(self, ctx):
         chID = ctx.channel.id
          
-        Tumbleweed.ChList.remove(chID)
+        Tumbleweed.ChList.remove(str(chID))
         await ctx.send("Remove this channel from the posting list!")
 
 def setup(bot):
