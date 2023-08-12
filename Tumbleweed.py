@@ -12,7 +12,7 @@ import random
 import asyncio
 import atexit
 
-# anchortime is is "base" time used. variance adds/subtracts to that to randomize the interval between images
+# anchortime is the "base" time used. variance adds/subtracts to that to randomize the interval between images
 anchortime = 7200
 variance = 3600
 
