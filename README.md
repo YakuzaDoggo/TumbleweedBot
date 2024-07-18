@@ -5,7 +5,6 @@ Stupid little bot I made after an idea was sent in a server... **3 YEARS AGO**.
 It sends an image of a tumbleweed at random, to a defined channel that the user sets. That's it.
 
 # Installation
-*Note that if you wish to use the bot, you can always invite it using [this link](https://discord.com/oauth2/authorize?client_id=1124911330328055828&scope=bot&permissions=100352).*
 
 **_Required_**
 - [At least Python 3.8](https://www.python.org/downloads/)
