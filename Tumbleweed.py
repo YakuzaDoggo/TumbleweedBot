@@ -1,3 +1,5 @@
+# Before using this code for any reason (running, editing) please read the license included in the LICENSE folder
+
 import nextcord
 from nextcord import Interaction
 from nextcord.ext import commands
@@ -16,6 +18,7 @@ import atexit
 anchortime = 7200
 variance = 3600
 
+# lets bot read what is in messages
 intents = nextcord.Intents.default()
 intents.message_content = True
 
@@ -27,7 +30,7 @@ images = images.images
 functions.UpdateArray()
 
 
-
+# array used to store channels that are "subscribed" to getting messages
 ChList = [ 
     ]
 
@@ -47,11 +50,11 @@ async def on_ready():
     print("channels in array")
     for x in ChList:
         print(x)
-
+    # start of bot sending random images
     while True:
         await SendTumbleweed(ChList)
 
-# begin of cogs shit (used for slash commands)
+# begin of cogs stuff (used for slash commands)
 @bot.event
 async def on_command_error(ctx, error):
     if isinstance(error, CommandNotFound):
@@ -69,8 +72,9 @@ async def unload(ctx, extension):
 for filename in os.listdir('./cogs'):
   if filename.endswith('.py'):
     bot.load_extension(f'cogs.{filename[:-3]}')
-# end of cogs shit (thank god)
+# end of cogs (thank god)
 
+# takes in ChList, calculates the time interval until posting, and posts the image to the channels
 async def SendTumbleweed(list):
     
     # this is just checks if we add or subtract to the anchortime
@@ -104,5 +108,6 @@ def exit_handler():
 
 atexit.register(exit_handler)
 
+# BE SURE TO ADD YOUR TOKEN OR ELSE BOT WILL NOT WORK
 token = "[TOKEN_GOES_HERE]"
 bot.run(token)
